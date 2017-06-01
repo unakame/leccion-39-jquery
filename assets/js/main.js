@@ -27,10 +27,67 @@ $(document).ready(cb);*/
 
 //otra
 
-$( _ => { //function {}
+/*$( _ => { //function {}
   alert ("cargo jQuery");
-})
+})*/
 
 /*(()=> a{ => u {
   alert ("dd")
 })} algo raro salio mal aca*/
+
+
+/*$(() => {//function
+$("a").click(function(e){
+  alert ("click en la bandera");
+  });
+});*/
+
+/*$(() => {//function
+$("a:last-child").click(function(e){
+  alert ("click en la bandera");
+  });
+});*/
+
+/*$(() => {//function
+$("a:last-child").click((e)=>{
+  alert ("click en la bandera");
+  });
+});*/
+
+/*$(() => {//function
+$("a:last-child").on('click',(e)=>{
+  alert ("click en la bandera");
+  });
+});*/
+
+/*$(() => {//function
+$("a").on('click',(e)=>{
+  alert ("click en la bandera");
+  });
+  const band = $('<a href="#">Banderita</a>');
+  $(".container").append(band);
+});*/
+
+/*$(() => {//function
+$("a:first-child").on('click',(e)=>{
+  e.preventDefault();
+  $('.brand-popup').show();
+  });
+  $("a:last-child").on('click',(e) => {
+    $('.brand-popup').toggle();
+  });
+});*/
+
+$(() => {//function
+
+  $('.popup-link').on('click',(e) => {
+    e.preventDefault();
+    $('.brand-popup').show();
+
+  });
+
+  $('.brand-popup .popup-close').on('click',(e) =>{
+    e.preventDefault();
+    $('.brand-popup').hide();
+  })
+});
